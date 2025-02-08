@@ -17,10 +17,10 @@ const Navbar = () => {
   return (
     <div  className='shadow-md w-full fixed top-0 left-0 '>
       <div className={`md:flex items-center justify-between ${darkMode ? "bg-black border-b" : "bg-white"} py-4 md:px-10 px-7`}>
-        <div className='flex md:hidden font-bold md:text-2xl text-lg  cursor-pointer items-center text-gray-800 flex-grow md:flex-grow-0'>
-          <NavLink to="/">Nizam Education<br/> Welfare (NEW)</NavLink>
+        <div className='flex  md:hidden font-bold md:text-2xl text-lg  cursor-pointer items-center text-gray-800 flex-grow md:flex-grow-0'>
+          <NavLink to="/" >Nizam Education<br/> Welfare (NEW)</NavLink>
         </div>
-        <div className={`hidden md:flex font-bold text-2xl cursor-pointer items-center  ${darkMode ? "text-white" : "text-gray-800"}  flex-grow md:flex-grow-0`}>
+        <div className={`hidden hover:scale-105  md:flex font-bold text-2xl cursor-pointer items-center  ${darkMode ? "text-white" : "text-gray-800"}  flex-grow md:flex-grow-0`}>
           <NavLink to="/">Nizam Education Welfare (NEW)</NavLink>
         </div>
         <div onClick={toggleHamburger} className='mt-2 absolute right-8 top-6 cursor-pointer md:hidden'>
@@ -57,7 +57,7 @@ const Navbar = () => {
           <Search />
         </div>
         {/* Mobile */}
-        <ul className={`md:hidden md:items-center delay-700 mb:pb-0 pb-3 pt-3 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 duration-500 ease-in ${open ? 'top-20 opacity-100' : 'top-[-490px]'} md:opacity-100 opacity-0`}>
+        <ul className={` md:hidden md:items-center delay-700 mb:pb-0 pb-3 pt-3 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 ease-in-out duration-5000  ${open ? 'top-20 opacity-100' : 'top-[-490px]'} md:opacity-100 opacity-0`}>
           {isLoggedIn && (
             <li className='md:ml-8 text-xl cursor-pointer md:my-0 my-7 md:px-0 text-gray-800 hover:text-gray-400 duration-500'>
               <NavLink to="/dashboard" className={({ isActive }) =>

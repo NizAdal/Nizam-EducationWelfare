@@ -81,7 +81,7 @@ function Posts() {
                   Here are Activities of <span className='text-green-400'>NEW</span>
                 </h1>
                 <div className='m-auto mt-5 shadow-custom-green w-3/6'></div>
-                <p className={`font-semibold md:text-xl text-lg  ${darkMode ? "text-white" : "text-black"}`}>
+                <p className={`font-semibold md:text-xl text-lg leading-relaxed antialiased  ${darkMode ? "text-white" : "text-black"}`}>
                   Nizam Education Welfare (NEW) is bound to work with matters related to the University of Sindh Jamshoro.
                 </p>
               </div>
@@ -101,7 +101,7 @@ function Posts() {
                   </video>
                 </div>
                 <div className='flex justify-center items-center'>
-                  <p className='w-[80%] mt-4'>
+                  <p className='w-[80%] mt-4 leading-relaxed antialiased'>
                     <span className='bg-amber-100 bold md:text-2xl text-lg '>Nizam Education Welfare (NEW)</span><br />
                     <p className={`${darkMode ? "text-white" : "text-black"}`}>
                     {d.Post}
@@ -141,8 +141,8 @@ function Posts() {
                     <img className='object-contain mb-4 text-2xl h-[500px]' src="/pic/logo.jpg" alt="Logo" />
                     <img className='object-contain mb-4 text-2xl h-[500px] hidden' src={item.imgurl} alt="Image" />
                   </div>
-                  <p className='font-semibold'>{item.title}</p>
-                  <p className='text-sm text-gray-950 break-words min-[5000px]:w-auto line-clamp-3'>{item.desc}</p>
+                  <p className='leading-relaxed antialiased font-semibold'>{item.title}</p>
+                  <p className='leading-relaxed antialiased text-sm text-gray-950 break-words min-[5000px]:w-auto line-clamp-3'>{item.desc}</p>
                 </Link>
               </motion.div>
             ))}

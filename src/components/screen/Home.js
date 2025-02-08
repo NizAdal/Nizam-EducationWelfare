@@ -29,7 +29,7 @@ function Home() {
         </div>
 
         <div className="flex justify-center items-center">
-          <p className="w-[80%]">
+          <p className="w-[80%] leading-relaxed antialiased">
             <span className={`${darkMode ? 'bg-black' : 'bg-amber-100'} bold text-2xl`}>Nizam Education Welfare (NEW)</span><br />
             Formed in May 2023 by students at the University of Sindh Jamshoro Hyderabad, Nizam Education Welfare (NEW) is dedicated to the well-being of students and the university community.<br />
             "Nizam" reflects our commitment to discipline, while "Welfare" emphasizes our focus on student and university welfare, and "Education" underscores our mission to promote academic excellence.

@@ -19,7 +19,7 @@ function PostDetails() {
  <>  
         
   <div className='mt-[50px] lg:mt-[30px] mb-[10px]  md:mt-[90px]'>
-    <h2 className='md:text-5xl text-2xl md:px-auto  px-2  justify-center font-extrabold text-gray-800 text-center drop-shadow-lg'>
+    <h2 className='leading-relaxed antialiased md:text-5xl text-2xl md:px-auto  px-2  justify-center font-extrabold text-gray-800 text-center drop-shadow-lg'>
     {title}
   </h2>
 </div>
@@ -30,7 +30,7 @@ function PostDetails() {
       <img className='md:w-full w-4/5  md:mx-auto mx-9  rounded-lg object-contain h-[500px]' src={imgurl} alt="Image" />
   </div>
   <div className='flex justify-center items-center'>
-    <p className='text-black w-[80%] mb-5'>
+    <p className='text-black w-[80%] mb-5 leading-relaxed antialiased'>
       {desc}
     </p>
   </div>

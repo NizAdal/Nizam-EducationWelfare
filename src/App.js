@@ -17,6 +17,7 @@ import Be from './components/screen/Be';
 import Upload  from './components/screen/Upload';
 import Notes from './components/Notes';
 import { useSelector } from 'react-redux';
+import NotFoundPage from './components/NotFoundPage'
 function App() {
   const dispatch = useDispatch();
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -49,6 +50,7 @@ function App() {
               } />
               <Route path="/login" element={<Login />} />
               <Route path='/card' element={formSubmitted ? <Card /> : <Navigate to="/getnotes" />} />
+              <Route path="*"  element={<NotFoundPage/>} />
             </Routes>
           </div>
           <Footer />
